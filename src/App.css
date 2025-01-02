@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #3498db, #ffa046);
+  
 }
 
-.App-link {
-  color: #61dafb;
+.App{
+  background: rgba(0, 0, 109, 0.308);
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(0, 10, 100);
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonn{
+  width: 5rem;
+  height: 5rem;
+  background: rgb(0, 10, 100);
+  color: #ffffff; 
+  border: solid 1px #ffffff;
+  margin: 0.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+
+#DelBtn{
+  width: 11rem;
+  height: 5rem;
+  background: red;
+  transition: 0.5s;
+}
+
+#EqualBtn{
+  width: 17rem;
+  height: 5rem;
+  background: rgb(255, 166, 0);
+}
+
+.buttonn:hover{
+  background: rgb(255, 166, 0);  
+}
+
+#DelBtn:hover{
+  background: rgb(0, 10, 100);
+}
+
+#EqualBtn:hover{
+  background: rgb(0, 10, 100);
 }
