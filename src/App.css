@@ -21,7 +21,8 @@ body{
     align-items: center;
     border: 5px solid rgb(0, 10, 100);
     box-shadow: 1px 1px 10px rgb(255, 255, 255);
-    
+    margin-top: 20px;
+    margin-bottom: 80px;    
 }
 
 .buttonn{

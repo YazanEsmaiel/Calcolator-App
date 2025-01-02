@@ -25,7 +25,7 @@ const calculateResult = () => {
   return (
     <div 
     
-    style={{display:"flex", justifyContent: "space-between", alignItems:"center", width:"1600px", height:"1200px"}}>
+    style={{display:"flex", justifyContent: "space-between", alignItems:"center", width:"1600px", height:"1200px", flexDirection:"column"}}>
     <div
     
     className="App">
@@ -78,7 +78,17 @@ const calculateResult = () => {
 
     </div>
 
-    
+    <footer>
+
+        <div>
+          <img style={{width:"800px", borderRadius:"10px"}} src={SecondImage}/>
+        </div>
+        <div>
+          <img style={{width:"800px", marginTop:"10px", borderRadius:"10px"
+          }} src={firstImage}/>
+        </div>
+       
+    </footer>
     </div>
   );
 }
