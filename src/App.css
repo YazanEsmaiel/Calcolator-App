@@ -62,3 +62,8 @@ body{
 #EqualBtn:hover{
   background: rgb(0, 10, 100);
 }
+@media (max-width: 480px) {
+  .body {
+    width: 80%; /* Adjust for small phones */
+  }
+}

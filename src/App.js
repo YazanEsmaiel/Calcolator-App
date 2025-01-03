@@ -4,6 +4,18 @@ import ImageOne from './1.png'
 import ImageTwo from './2.png'
 
 function App() {
+  const [isZoomed, setIsZoomed] = useState(false);
+  const toggleZoom = () => {
+    setIsZoomed(!isZoomed);
+  };
+
+  const [isZoomedd, setIsZoomedd] = useState(false);
+
+  const toggleZoom2 = () => {
+    setIsZoomedd(!isZoomedd);
+  };
+ 
+ 
   let SecondImage = ImageTwo
   let firstImage = ImageOne
   const[value, setValue] = useState(' ');
@@ -78,14 +90,34 @@ const calculateResult = () => {
 
     </div>
 
-    <footer>
+    <footer style={{display:"flex", justifyContent: "space-between", alignItems:"center", flexDirection:"column"}}>
 
         <div>
-          <img style={{width:"800px", borderRadius:"10px"}} src={SecondImage}/>
+          <img className='images' 
+          onClick={toggleZoom2}
+          style={{
+            width:"400px", 
+            marginTop:"10px", 
+            borderRadius:"10px",
+            cursor: "pointer",
+            transition: "transform 0.3s ease",
+            transform: isZoomedd ? "scale(2)" : "scale(1)",
+            }} 
+          src={SecondImage}/>
         </div>
         <div>
-          <img style={{width:"800px", marginTop:"10px", borderRadius:"10px"
-          }} src={firstImage}/>
+          <img className='images' 
+          onClick={toggleZoom}
+          style={{
+            width:"400px", 
+            marginTop:"10px", 
+            borderRadius:"10px",
+            cursor: "pointer",
+            transition: "transform 0.3s ease",
+            transform: isZoomed ? "scale(2)" : "scale(1)",
+            }} 
+            
+            src={firstImage}/>
         </div>
        
     </footer>
